@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벨아벨 이커머스 운영 지원 견적서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #F8F9FA;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .quote-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #F8F9FA;
+            border-radius: 8px;
+        }
+        .info-section h3 {
+            color: #4A5568;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 5px;
+        }
+        .info-section p {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .quote-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .quote-table th {
+            background: #4A5568;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .quote-table td {
+            padding: 15px;
+            border-bottom: 1px solid #E2E8F0;
+            text-align: center;
+        }
+        .quote-table td:first-child {
+            text-align: left;
+        }
+        .quote-table tr:last-child td {
+            border-bottom: none;
+        }
+        .quote-table .service-name {
+            font-weight: 600;
+            color: #2D3748;
+        }
+        .quote-table .price {
+            font-weight: 600;
+            color: #667EEA;
+        }
+        .total-row {
+            background: #EDF2F7 !important;
+        }
+        .total-row td {
+            font-weight: 700;
+            font-size: 18px;
+            color: #2D3748;
+        }
+        .terms {
+            background: #F7FAFC;
+            border-left: 4px solid #667EEA;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .terms h3 {
+            color: #4A5568;
+            margin-bottom: 15px;
+        }
+        .terms ul {
+            list-style: none;
+        }
+        .terms li {
+            padding: 4px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+        .terms li:before {
+            content: "•";
+            color: #667EEA;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .validity {
+            text-align: center;
+            background: #FFF5F5;
+            border: 1px solid #FED7D7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .footer {
+            background: #2D3748;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .company-info {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+        }
+        @media (max-width: 600px) {
+            .quote-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>견 적 서</h1>
+            <div class="subtitle">이커머스 운영 지원 서비스</div>
+        </div>
+        <div class="content">
+            <div class="quote-info">
+                <div class="info-section">
+                    <h3>견적 요청자</h3>
+                    <p><strong>회사명:</strong> 벨아벨팜</p>
+                    <p><strong>담당자:</strong></p>
+                    <p><strong>연락처:</strong></p>
+                    <p><strong>이메일:</strong></p>
+                </div>
+                <div class="info-section">
+                    <h3>견적 제공자</h3>
+                    <p><strong>회사명:</strong> (주)매치스플랜</p>
+                    <p><strong>서비스:</strong> 백오피스랩</p>
+                    <p><strong>담당자:</strong> 김이삭</p>
+                    <p><strong>연락처:</strong> 010-5180-3208</p>
+                    <p><strong>견적일:</strong> 2025년 8월 11일</p>
+                </div>
+            </div>
+            <table class="quote-table">
+                <thead>
+                    <tr>
+                        <th style="width: 40%;">서비스 항목</th>
+                        <th style="width: 15%;">수량</th>
+                        <th style="width: 20%;">단가</th>
+                        <th style="width: 25%;">금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="service-name">이커머스 운영 지원 (GROWTH 플랜)</td>
+                        <td>1개월</td>
+                        <td class="price">2,000,000원</td>
+                        <td class="price">2,000,000원</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 30px; font-size: 14px; color: #666;">
+                            ∙ 주문/재고 관리<br>
+                            ∙ 고객 문의/리뷰 관리<br>
+                            ∙ 플랫폼 운영 지원<br>
+                            ∙ 운영 리포팅
+                        </td>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td class="service-name">3일 무료 테스트</td>
+                        <td>1회</td>
+                        <td class="price">0원</td>
+                        <td class="price">0원</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>합계 (부가세 별도)</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>2,000,000원</strong></td>
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>부가세 (10%)</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>200,000원</strong></td>
+                    </tr>
+                    <tr class="total-row" style="background: #667EEA !important; color: white;">
+                        <td><strong>총 금액</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>-</strong></td>
+                        <td><strong>2,200,000원</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="terms">
+                <h3>계약 조건</h3>
+                <ul>
+                    <li><strong>계약 기간:</strong> 월 단위 계약 (자동 연장)</li>
+                    <li><strong>결제 조건:</strong> 매월 말일 익월 서비스 비용 선납</li>
+                    <li><strong>업무 시간:</strong> 평일 09:00 - 18:00</li>
+                    <li><strong>전담 인력:</strong> 이커머스 운영 경험 보유 팀원 배정</li>
+                    <li><strong>커뮤니케이션:</strong> 카카오톡 + 슬랙 실시간 소통</li>
+                    <li><strong>리포팅:</strong> 일일 업무 완료 보고 + 주간 상세 리포트</li>
+                </ul>
+            </div>
+            <div class="terms">
+                <h3>서비스 시작 절차</h3>
+                <ul>
+                    <li><strong>1단계:</strong> 전화/채팅 상담 (서비스 소개 및 일정 조율)</li>
+                    <li><strong>2단계:</strong> 온보딩 미팅 (온라인 20분, 업무 범위 정의)</li>
+                    <li><strong>3단계:</strong> 커뮤니케이션 채널 구성 (업무 전용 채팅방 개설)</li>
+                    <li><strong>4단계:</strong> 3일 무료 테스트 시작</li>
+                    <li><strong>5단계:</strong> 정식 계약 체결 및 서비스 개시</li>
+                </ul>
+            </div>
+            <div class="validity">
+                본 견적서는 발행일로부터 <strong>30일간 유효</strong>합니다.
+            </div>
+        </div>
+        <div class="footer">
+            <div style="font-size: 18px; margin-bottom: 10px;">
+                <strong>(주)매치스플랜 백오피스랩</strong>
+            </div>
+            <div class="company-info">
+                대표: 김이삭 | 사업자등록번호: 456-81-03325<br>
+                통신판매신고: 제 2022-서울마포-2746호<br>
+                주소: 서울특별시 마포구 독막로28길 10, 109동 상가 B101-290호<br>
+                담당자: 010-5180-3208 | 이메일: contact@matchsplan.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>
